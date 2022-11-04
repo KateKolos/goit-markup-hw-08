@@ -1,21 +1,33 @@
 .footer {
   background-color: var(--footer-background-color);
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  @include desktop {
+    // padding-left: 215px;
+    // padding-right: 215px;
+  }
 }
 
 .footer_container {
   text-align: center;
   @include tablet {
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    // align-items: center;
+    justify-content: space-between;
     align-items: baseline;
   }
   @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
+    justify-content: center;
     text-align: left;
+  }
+}
+
+.tablet-container {
+  @include tablet {
+    display: flex;
+    // justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -115,10 +127,12 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--container-bg-color);
   margin-bottom: 20px;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .input__container {

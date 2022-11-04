@@ -206,22 +206,30 @@ span.logo__accent {
 .footer {
   background-color: var(--footer-background-color);
 }
-
 .footer_container {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer_container {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer_container {
+    display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
+    justify-content: center;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-container {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -315,10 +323,14 @@ span.logo__accent {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--container-bg-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .input__title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -476,7 +488,7 @@ span.logo__accent {
 
 .hero--overlay {
   width: 100%;
-  background-image: var(--bg-gradient), url(/images/team-mob.jpeg);
+  background-image: var(--bg-gradient), url(../images/team-mob.jpeg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
@@ -484,40 +496,45 @@ span.logo__accent {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero--overlay {
-    background-image: var(--bg-gradient), url(/images/team-mob-2x.jpeg);
+    background-image: var(--bg-gradient), url(../images/team-mob-2x.jpeg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero--overlay {
-    background-image: var(--bg-gradient), url(/images/team-tab.jpeg);
+    background-image: var(--bg-gradient), url(../images/team-tab.jpeg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero--overlay {
-    background-image: var(--bg-gradient), url(/images/team-tab-2x.jpeg);
+    background-image: var(--bg-gradient), url(../images/team-tab-2x.jpeg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero--overlay {
-    background-image: var(--bg-gradient), url(/images/team.jpeg);
+    background-image: var(--bg-gradient), url(../images/team.jpeg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero--overlay {
-    background-image: var(--bg-gradient), url(/images/team-2x.jpeg);
+    background-image: var(--bg-gradient), url(../images/team-2x.jpeg);
   }
 }
 
 .hero__title {
   color: var(--container-bg-color);
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.62;
   text-align: center;
   text-transform: uppercase;
   max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -562,7 +579,7 @@ span.logo__accent {
 }
 
 .features__item:not(:last-child) {
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -581,7 +598,6 @@ span.logo__accent {
 .features__img {
   display: flex;
   height: 120px;
-  width: 450px;
   background-color: var(--button-bg-color);
   border-radius: 4px;
   align-items: center;
@@ -600,7 +616,7 @@ span.logo__accent {
 }
 
 .feature__descr {
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .feature__descr {
@@ -751,8 +767,6 @@ span.logo__accent {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
-  height: 92px;
   color: var(--clients-border-color);
   border: 1px solid var(--clients-border-color);
   border-radius: 4px;

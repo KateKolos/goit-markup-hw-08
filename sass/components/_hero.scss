@@ -14,24 +14,24 @@
 .hero--overlay {
   // max-width: 1600px;
   width: 100%;
-  background-image: var(--bg-gradient), url(/images/team-mob.jpeg);
+  background-image: var(--bg-gradient), url(../images/team-mob.jpeg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @include retina {
-    background-image: var(--bg-gradient), url(/images/team-mob-2x.jpeg);
+    background-image: var(--bg-gradient), url(../images/team-mob-2x.jpeg);
   }
   @include tablet {
-    background-image: var(--bg-gradient), url(/images/team-tab.jpeg);
+    background-image: var(--bg-gradient), url(../images/team-tab.jpeg);
     @include retina {
-      background-image: var(--bg-gradient), url(/images/team-tab-2x.jpeg);
+      background-image: var(--bg-gradient), url(../images/team-tab-2x.jpeg);
     }
   }
   @include desktop {
-    background-image: var(--bg-gradient), url(/images/team.jpeg);
+    background-image: var(--bg-gradient), url(../images/team.jpeg);
     @include retina {
-      background-image: var(--bg-gradient), url(/images/team-2x.jpeg);
+      background-image: var(--bg-gradient), url(../images/team-2x.jpeg);
     }
   }
 }
@@ -39,13 +39,19 @@
 .hero__title {
   color: var(--container-bg-color);
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.62;
   text-align: center;
   text-transform: uppercase;
   max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+  }
+  // @include tablet {
+  //   font-size: 26px;
+  // }
   @include desktop {
     font-size: 44px;
     line-height: 1.36;
