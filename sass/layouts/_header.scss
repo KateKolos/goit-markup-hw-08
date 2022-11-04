@@ -3,7 +3,7 @@
 }
 
 .header-container {
-  display: none;
+  // display: none;
   @include tablet {
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@
   }
 }
 
-.menu-open-btn {
-  margin-left: 10px;
-  margin-top: 10px;
-}
+// .menu-open-btn {
+//   margin-left: 10px;
+//   margin-top: 10px;
+// }

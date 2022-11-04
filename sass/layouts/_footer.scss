@@ -1,61 +1,208 @@
+// .footer {
+//   background-color: var(--footer-background-color);
+//   // padding-top: 60px;
+//   // padding-bottom: 60px;
+// }
+
+// .footer_container {
+//   text-align: center;
+//   @include tablet {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     // align-items: center;
+//     align-items: baseline;
+//   }
+//   @include desktop {
+//     align-items: baseline;
+//     text-align: left;
+//   }
+// }
+
+// .footer_nav {
+//   // text-align: center;
+//   // margin: 0 auto;
+//   @include tablet {
+//     // margin-right: 165px;
+//   }
+//   @include desktop {
+//     display: block;
+//     margin-right: 70px;
+//     // text-align: left;
+//   }
+// }
+
+// .footer__logo {
+//   color: var(--container-bg-color);
+//   display: block;
+//   margin-bottom: 20px;
+//   font-size: 24px;
+//   line-height: 1.67;
+// }
+
+// .nav__list {
+//   margin-bottom: 60px;
+//   @include desktop {
+//     margin-bottom: 0;
+//   }
+// }
+
+// .nav__item:not(:last-child) {
+//   margin-bottom: 8px;
+//   @include desktop {
+//     margin-bottom: 9px;
+//   }
+// }
+
+// .nav__link {
+//   color: var(--footer-link-color);
+//   font-style: normal;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   display: block;
+//   transition: color var(--transition-duration) var(--transition-timing-function);
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .nav__link--address {
+//   color: var(--container-bg-color);
+// }
+
+// .footer-soc {
+//   margin-bottom: 60px;
+//   @include tablet {
+//     margin-bottom: 0;
+//   }
+//   @include desktop {
+//     margin-right: 93px;
+//     margin-bottom: 0;
+//     // text-align: left;
+//   }
+// }
+
+// .footer-soc__title {
+//   display: block;
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: var(--container-bg-color);
+//   margin-bottom: 20px;
+// }
+
+// .footer-soc__link {
+//   color: var(--container-bg-color);
+//   display: flex;
+//   background-color: rgba(255, 255, 255, 0.1);
+//   transition: background-color var(--transition-duration)
+//     var(--transition-timing-function);
+// }
+
+// .input {
+//   display: inline;
+//   text-align: center;
+//   // margin: 0 auto;
+//   @include desktop {
+//     // text-align: left;
+//   }
+// }
+
+// .input__title {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: var(--container-bg-color);
+//   margin-bottom: 20px;
+// }
+
+// .input__container {
+//   @include desktop {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
+// .input__container input {
+//   width: 450px;
+//   height: 50px;
+//   padding: 15px 16px;
+//   margin-bottom: 20px;
+//   background-color: inherit;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   border-radius: 4px;
+//   color: var(--button-bg-color);
+//   &::placeholder {
+//     color: rgba(255, 255, 255, 0.6);
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//   }
+//   @include desktop {
+//     width: 358px;
+//     margin-right: 12px;
+//     margin-bottom: 0;
+//   }
+// }
+
+// .input__button {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 10px;
+// }
+
+// .input__img {
+//   fill: currentColor;
+//   transition: transform 500ms var(--transition-timing-function),
+//     rotate 500ms var(--transition-timing-function);
+//   .input__button:hover > & {
+//     transform: translateX(10px) rotate(10deg);
+//   }
+// }
+
+// footer hw-07
+
 .footer {
   background-color: var(--footer-background-color);
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer_container {
-  text-align: center;
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-items: baseline;
-  }
+  display: flex;
+  align-items: center;
+  align-items: baseline;
 }
 
 .footer_nav {
-  // text-align: center;
-  // margin: 0 auto;
-  @include tablet {
-    // margin-right: 165px;
-  }
-  @include desktop {
-    display: block;
-    margin-right: 70px;
-    text-align: left;
-  }
+  display: block;
+  margin-right: 70px;
 }
 
 .footer__logo {
   color: var(--container-bg-color);
   display: block;
   margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 1.67;
-}
-
-.nav__list {
-  margin-bottom: 60px;
-  @include desktop {
-    margin-bottom: 0;
-  }
 }
 
 .nav__item:not(:last-child) {
-  margin-bottom: 8px;
-  @include desktop {
-    margin-bottom: 9px;
-  }
+  margin-bottom: 9px;
 }
 
 .nav__link {
+  // display: inline;
   color: var(--footer-link-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  display: block;
+
   transition: color var(--transition-duration) var(--transition-timing-function);
   &:hover,
   &:focus {
@@ -68,14 +215,7 @@
 }
 
 .footer-soc {
-  margin-bottom: 60px;
-  @include tablet {
-    margin-bottom: 0;
-  }
-  @include desktop {
-    margin-right: 93px;
-    margin-bottom: 0;
-  }
+  margin-right: 93px;
 }
 
 .footer-soc__title {
@@ -97,15 +237,6 @@
     var(--transition-timing-function);
 }
 
-.input {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  @include desktop {
-    text-align: left;
-  }
-}
-
 .input__title {
   font-weight: 700;
   font-size: 14px;
@@ -117,21 +248,19 @@
 }
 
 .input__container {
-  @include desktop {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
 }
 
 .input__container input {
-  width: 450px;
-  height: 50px;
-  padding: 15px 16px;
-  margin-bottom: 20px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
   color: var(--button-bg-color);
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -139,19 +268,7 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
   }
-  @include desktop {
-    width: 358px;
-    margin-right: 12px;
-    margin-bottom: 0;
-  }
 }
-
-// .input__container input::placeholder {
-//   color: rgba(255, 255, 255, 0.6);
-//   font-size: 16px;
-//   line-height: 1.25;
-//   letter-spacing: 0.03em;
-// }
 
 .input__button {
   display: flex;

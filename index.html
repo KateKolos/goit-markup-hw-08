@@ -164,34 +164,58 @@
           <ul class="work__sample list">
             <li class="work__photo">
               <div class="work__thumb">
-                <img
-                  src="./images/work/img1.jpeg"
-                  alt="людина пише код"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/work/img1.jpeg    1x,
+                      /images/work/img1-2x.jpeg 2x
+                    "
+                  />
+                  <img
+                    src="./images/work/img1.jpeg"
+                    alt="людина пише код"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="work__overlay">Десктопні додатки</p>
               </div>
             </li>
             <li class="work__photo">
               <div class="work__thumb">
-                <img
-                  src="./images/work/img2.jpeg"
-                  alt="людина тримає телефон"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/work/img2.jpeg    1x,
+                      /images/work/img2-2x.jpeg 2x
+                    "
+                  />
+                  <img
+                    src="./images/work/img2.jpeg"
+                    alt="людина тримає телефон"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="work__overlay">Мобільні додатки</p>
               </div>
             </li>
             <li class="work__photo">
               <div class="work__thumb">
-                <img
-                  src="./images/work/img3.jpeg"
-                  alt="палета кольорів на планшеті"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/work/img3.jpeg    1x,
+                      /images/work/img3-2x.jpeg 2x
+                    "
+                  />
+                  <img
+                    src="./images/work/img3.jpeg"
+                    alt="палета кольорів на планшеті"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="work__overlay">Дизайнерські рішення</p>
               </div>
             </li>
@@ -537,7 +561,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer section">
+    <!-- <footer class="footer section">
       <div class="footer_container container">
         <div class="footer_nav">
           <a href="#" class="footer__logo logo">
@@ -630,7 +654,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- modal -->
     <!-- <div class="backdrop is-hidden" data-modal>
