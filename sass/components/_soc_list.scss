@@ -1,0 +1,34 @@
+.soc__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.soc__link {
+  color: var(--clients-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--container-bg-color);
+  }
+}
+
+.soc__icon {
+  fill: currentColor;
+}
+
+.soc__link:hover,
+.soc__link:focus {
+  background-color: var(--accent-color);
+  color: var(--container-bg-color);
+}

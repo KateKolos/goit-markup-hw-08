@@ -1,0 +1,22 @@
+.btn {
+  margin: 0 auto;
+  font-family: inherit;
+  color: var(--container-bg-color);
+  background: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-color: transparent;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+  &:hover {
+    background-color: var(--accent-hover-color);
+  }
+}

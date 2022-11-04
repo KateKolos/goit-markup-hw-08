@@ -1,0 +1,23 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --accent-hover-color: #188ce8;
+  --container-bg-color: #ffffff;
+  --container-border-color: #eeeeee;
+  --button-bg-color: #f5f4fa;
+  --logo-main-color: #000000;
+  --footer-background-color: #2f303a;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --clients-border-color: #afb1b8;
+  --grid-overlay-color: rgba(33, 150, 243, 0.9);
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --main-font: "Roboto", sans serif;
+  --letter-spacing: 0.03em;
+  --bg-gradient: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+}
