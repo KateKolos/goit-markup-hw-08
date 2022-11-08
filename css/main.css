@@ -127,6 +127,8 @@ span.logo__accent {
 }
 
 .header-container {
+  display: flex;
+  align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -134,12 +136,8 @@ span.logo__accent {
   .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 }
-
 .header__nav {
   display: none;
 }
@@ -251,8 +249,23 @@ span.logo__accent {
 .menu-open-btn {
   background-color: var(--container-bg-color);
   border-color: transparent;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .footer {

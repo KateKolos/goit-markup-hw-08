@@ -24,5 +24,6 @@
     <symbol id="icon-checkbox" viewBox="0 0 34 32"><path d="M30.344 3.555v24.89h-26.55v-24.89h26.55zM30.344-0.002h-26.55c-2.087 0-3.793 1.6-3.793 3.557v24.89c0 1.956 1.707 3.557 3.793 3.557h26.55c2.087 0 3.793-1.6 3.793-3.557v-24.89c0-1.956-1.707-3.557-3.793-3.557z"></path></symbol>
     <symbol id="icon-check" viewBox="0 0 42 32"><path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.265 15.206l-0.221-0.211-0.221 0.208-3.086 2.926 0.243 0.234 11.413 10.884 0.221-0.211 24.266-23.148-0.243-0.231-3.044-2.904-0.221 0.211-20.978 19.995-8.128-7.753z"></path></symbol>
     <symbol id="icon-mobile-menu-btn" viewBox="0 0 32 32"><path d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z"></path></symbol>
+    <symbol id="icon-mobile-menu-close-btn" viewBox="0 0 32 32"><path d="M23.734 10.304l-1.504-1.504-5.963 5.962-5.962-5.962-1.504 1.504 5.962 5.962-5.962 5.963 1.504 1.504 5.962-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.962z"></path></symbol>
 </defs>
 </svg>

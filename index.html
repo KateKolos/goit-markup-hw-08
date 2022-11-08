@@ -28,7 +28,7 @@
     <!-- header -->
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="logo">
+        <a href="./index.html" class="logo header__logo">
           <span class="logo__accent">Web</span>Studio
         </a>
         <nav class="header__nav">
@@ -66,6 +66,7 @@
             </a>
           </li>
         </ul>
+
         <button type="button" class="menu-open-btn" data-menu-open>
           <svg width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-mobile-menu-btn"></use>
@@ -73,10 +74,88 @@
         </button>
       </div>
 
-      <div class="header-mobile">
-        <div class="container">
-          <a class="logo"></a>
-          <!-- <button class="menu-close-btn" type="button"></button> -->
+      <div class="mob-menu">
+        <button class="mob-menu-close-btn" type="button">
+          <svg width="40" height="40">
+            <use
+              href="./images/symbol-defs.svg#icon-mobile-menu-close-btn"
+            ></use>
+          </svg>
+        </button>
+        <div class="">
+          <ul class="mob-menu list">
+            <li class="mob-menu__item">
+              <a
+                href="../index.html"
+                class="mob-menu__link mob-menu__link-current"
+                >Студія
+              </a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="#" class="mob-menu__link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mob-contacts list">
+            <li class="mob-contacts__item">
+              <a
+                class="mob-contacts__link link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="mob-contacts__item">
+              <a class="mob-contacts__link link" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="mob-soc">
+            <li class="mob-soc__item">
+              <a
+                class="mob-soc__link"
+                href="index.html"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram
+              </a>
+            </li>
+            <li class="mob-soc__item">
+              <a
+                class="mob-soc__link"
+                href="index.html"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Twitter
+              </a>
+            </li>
+            <li class="mob-soc__item">
+              <a
+                class="mob-soc__link"
+                href="index.html"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Facebook
+              </a>
+            </li>
+            <li class="mob-soc__item">
+              <a
+                class="mob-soc__link"
+                href="index.html"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -738,5 +817,6 @@
     </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
