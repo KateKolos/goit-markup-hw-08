@@ -4,3 +4,7 @@ body {
   background-color: var(--container-bg-color);
   letter-spacing: var(--letter-spacing);
 }
+
+.no-scroll {
+  overflow: hidden;
+}

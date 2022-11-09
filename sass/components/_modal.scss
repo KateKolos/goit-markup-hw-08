@@ -10,8 +10,8 @@
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -20,6 +20,20 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include desktop {
+    position: absolute;
+    padding: 40px;
+    width: 528px;
+    min-height: 581px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -49,12 +63,6 @@
   fill: currentColor;
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .modal__title {
   font-weight: 700;
   font-size: 20px;
@@ -64,8 +72,11 @@
 }
 
 .form {
-  width: 448px;
+  width: 370px;
   margin: 0 auto;
+  @include desktop {
+    width: 448px;
+  }
 }
 
 .form__field {
@@ -151,19 +162,22 @@ textarea {
 .checkbox {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 30px;
   margin-top: 20px;
 }
 
 .checkbox__label {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 2.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--secondary-text-color);
   text-align: center;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__input {

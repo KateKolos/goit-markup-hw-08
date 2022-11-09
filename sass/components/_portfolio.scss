@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
-  @include desktop {
+  @include tablet {
     display: flex;
     justify-content: center;
     list-style: none;
