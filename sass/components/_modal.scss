@@ -193,6 +193,11 @@ textarea {
   clip: rect(0 0 0 0);
   overflow: hidden; */
 }
+.checkbox__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .checkbox__icon {
   display: inline-block;
