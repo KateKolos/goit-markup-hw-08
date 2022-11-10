@@ -40,26 +40,27 @@
 }
 
 .portfolio-grid {
-  // width: 100%;
-  gap: 30px;
   @include tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
   }
   @include desktop {
   }
 }
 
 .portfolio-grid__item {
-  width: 100%;
+  width: 450px;
   margin-bottom: 30px;
   @include tablet {
-    width: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
+    width: 354px;
     margin-bottom: 0px;
   }
   @include desktop {
-    width: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
+    width: 370px;
   }
 }
 
@@ -107,6 +108,12 @@
   border-left: 1px solid var(--container-border-color);
   border-right: 1px solid var(--container-border-color);
   border-bottom: 1px solid var(--container-border-color);
+  @include tablet {
+    width: 354px;
+  }
+  @include desktop {
+    width: 370px;
+  }
 }
 
 .portfolio-grid__title {

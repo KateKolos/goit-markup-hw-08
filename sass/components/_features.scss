@@ -13,10 +13,6 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  @include desktop {
-    display: flex;
-    gap: 30px;
-  }
 }
 
 .features__item:not(:last-child) {
@@ -24,6 +20,7 @@
   margin-bottom: 30px;
   @include tablet {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
   @include desktop {
     display: flex;

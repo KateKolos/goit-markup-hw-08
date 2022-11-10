@@ -1,16 +1,12 @@
 .header {
   border-bottom: 1px solid var(--container-border-color);
+  @include tablet;
 }
 
 .header-container {
-  // position: relative;
   display: flex;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
   @include tablet {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
   }
   @include desktop {
@@ -43,11 +39,8 @@
   }
 }
 
-.site-nav__item {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .site-nav__link {
@@ -70,8 +63,8 @@
   display: none;
   @include tablet {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    // padding-top: 21px;
+    // padding-bottom: 21px;
   }
   @include desktop {
     display: flex;
@@ -123,6 +116,20 @@
   }
 }
 
+.auth-nav__icon--mail {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.auth-nav__icon--phone {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 10px;
+    height: 12px;
+  }
+}
+
 .menu-open-btn {
   margin-left: auto;
   background-color: transparent;
@@ -134,13 +141,18 @@
 
 .mob-menu {
   position: fixed;
-  display: inline-block;
+  display: block;
   top: 0;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   z-index: 1;
   padding: 48px 40px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: var(--transition-duration) var(--transition-timing-function);
   > .mob-container {
     height: 100%;
     display: flex;
@@ -148,6 +160,14 @@
     justify-content: space-between;
     overflow: auto;
   }
+}
+
+.mob-menu.is-open {
+  opacity: 1;
+  pointer-events: visible;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .mob-menu-close-btn {
@@ -180,6 +200,11 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.mob-nav__link--current {
+  position: relative;
+  color: var(--accent-color);
 }
 
 .mob-contacts {

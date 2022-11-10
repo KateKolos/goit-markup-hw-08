@@ -3,4 +3,12 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  // @include tablet {
+  //   width: 738px;
+  //   adding-left: 0;
+  //   padding-right: 0;
+  // }
+  // @include desktop {
+  //   width: 1200px;
+  // }
 }

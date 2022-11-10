@@ -12,7 +12,8 @@
   // refs.menuList.addEventListener('click', removeMenu);
 
   function toggleMenu() {
-    refs.menu.classList.toggle("is-hidden");
+    // refs.menu.classList.toggle("is-hidden");
+    refs.menu.classList.toggle("is-open");
     refs.body.classList.toggle("no-scroll");
   }
   // function removeMenu() {
@@ -20,3 +21,18 @@
   //   refs.body.classList.remove('no-scroll');
   // }
 })();
+
+// (() => {
+//   const refs = {
+//     openMenuBtn: document.querySelector("[data-menu-open]"),
+//     closeMenuBtn: document.querySelector("[data-menu-close]"),
+//     menu: document.querySelector("[data-menu]"),
+//   };
+
+//   refs.openMenuBtn.addEventListener("click", toggleModal);
+//   refs.closeMenuBtn.addEventListener("click", toggleModal);
+
+//   function toggleModal() {
+//     refs.menu.classList.toggle("is-open");
+//   }
+// })();
