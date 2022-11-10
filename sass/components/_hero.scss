@@ -1,14 +1,8 @@
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  // padding-left: 60px;
-  // padding-right: 60px;
   text-align: center;
   margin: 0 auto;
-  @include tablet {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
   @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
