@@ -1,6 +1,5 @@
 .header {
   border-bottom: 1px solid var(--container-border-color);
-  @include tablet;
 }
 
 .header-container {
@@ -10,6 +9,7 @@
     justify-content: space-between;
   }
   @include desktop {
+    display: flex;
   }
 }
 
@@ -25,6 +25,7 @@
     align-items: baseline;
   }
   @include desktop {
+    display: flex;
     align-items: center;
   }
 }
@@ -35,6 +36,7 @@
     justify-content: space-evenly;
   }
   @include desktop {
+    display: flex;
     margin-left: 93px;
   }
 }
@@ -63,14 +65,14 @@
   display: none;
   @include tablet {
     display: block;
-    // padding-top: 21px;
-    // padding-bottom: 21px;
   }
   @include desktop {
     display: flex;
     flex-direction: row;
     margin-left: auto;
     align-items: baseline;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -83,6 +85,7 @@
   }
   @include desktop {
     margin-right: 50px;
+    margin-bottom: 0;
     &:last-child {
       margin-right: 0;
     }
@@ -103,6 +106,10 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @include desktop {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -135,6 +142,9 @@
   background-color: transparent;
   border-color: transparent;
   @include tablet {
+    display: none;
+  }
+  @include desktop {
     display: none;
   }
 }

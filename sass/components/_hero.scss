@@ -1,9 +1,13 @@
 .hero {
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  // padding-left: 60px;
+  // padding-right: 60px;
   text-align: center;
   margin: 0 auto;
   @include tablet {
-    padding: 118px 204px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
   @include desktop {
     padding-top: 200px;
@@ -12,7 +16,6 @@
 }
 
 .hero--overlay {
-  // max-width: 1600px;
   width: 100%;
   background-image: var(--bg-gradient), url(../images/team-mob.jpeg);
   background-color: #c4c4c4;
@@ -29,6 +32,7 @@
     }
   }
   @include desktop {
+    max-width: 1600px;
     background-image: var(--bg-gradient), url(../images/team.jpeg);
     @include retina {
       background-image: var(--bg-gradient), url(../images/team-2x.jpeg);

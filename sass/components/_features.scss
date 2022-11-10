@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   @include desktop {
-    padding-top: 94px;
+    // padding-top: 94px;
     padding-bottom: 47px;
   }
 }
@@ -11,6 +11,10 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+  }
+  @include desktop {
+    display: flex;
     gap: 30px;
   }
 }
@@ -25,7 +29,8 @@
   @include desktop {
     display: flex;
     flex-direction: column;
-    width: calc((100% - 3 * 30px) / 4);
+    margin-bottom: 0;
+    // width: calc((100% - 3 * 30px) / 4);
   }
 }
 
@@ -39,10 +44,10 @@
   justify-content: center;
   margin-bottom: 30px;
   @include tablet {
-    width: 354px;
+    // width: 354px;
   }
   @include desktop {
-    width: 270px;
+    // width: 270px;
   }
 }
 
