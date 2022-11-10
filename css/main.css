@@ -147,6 +147,11 @@ body {
   border-radius: 2px;
   margin: -1px;
 }
+@media screen and (min-width: 1200px) {
+  .site-nav__link-current::after {
+    margin: -2px;
+  }
+}
 
 .title {
   font-weight: 700;
@@ -299,8 +304,6 @@ span.logo__accent {
     flex-direction: row;
     margin-left: auto;
     align-items: baseline;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 
@@ -337,8 +340,8 @@ span.logo__accent {
 }
 @media screen and (min-width: 1200px) {
   .auth-nav__link {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

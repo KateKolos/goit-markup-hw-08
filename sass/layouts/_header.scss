@@ -71,8 +71,8 @@
     flex-direction: row;
     margin-left: auto;
     align-items: baseline;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    // padding-top: 21px;
+    // padding-bottom: 21px;
   }
 }
 
@@ -100,16 +100,19 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  // padding-top: 21px;
-  // padding-bottom: 21px;
+
   transition: color var(--transition-duration) var(--transition-timing-function);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+  @include tablet {
+    // padding-top: 21px;
+    // padding-bottom: 21px;
+  }
   @include desktop {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
