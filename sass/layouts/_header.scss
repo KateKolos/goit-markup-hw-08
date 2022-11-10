@@ -27,6 +27,7 @@
   @include desktop {
     display: flex;
     align-items: center;
+    margin-left: 93px;
   }
 }
 
@@ -37,7 +38,6 @@
   }
   @include desktop {
     display: flex;
-    margin-left: 93px;
   }
 }
 
@@ -141,6 +141,8 @@
 }
 
 .menu-open-btn {
+  padding-top: 10px;
+  // padding-right: 10px;
   margin-left: auto;
   background-color: transparent;
   border-color: transparent;

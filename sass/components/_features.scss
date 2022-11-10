@@ -72,6 +72,9 @@
   @include tablet {
     text-align: left;
   }
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .feature__text {

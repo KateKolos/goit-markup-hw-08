@@ -193,7 +193,7 @@ body {
   margin: 0 auto;
   font-family: inherit;
   color: var(--container-bg-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -255,6 +255,7 @@ span.logo__accent {
   .header__nav {
     display: flex;
     align-items: center;
+    margin-left: 93px;
   }
 }
 
@@ -267,7 +268,6 @@ span.logo__accent {
 @media screen and (min-width: 1200px) {
   .site-nav {
     display: flex;
-    margin-left: 93px;
   }
 }
 
@@ -369,6 +369,7 @@ span.logo__accent {
 }
 
 .menu-open-btn {
+  padding-top: 10px;
   margin-left: auto;
   background-color: transparent;
   border-color: transparent;
@@ -679,6 +680,11 @@ span.logo__accent {
     text-align: left;
   }
 }
+@media screen and (min-width: 1200px) {
+  .features__subtitle {
+    text-align: left;
+  }
+}
 
 .feature__text {
   font-size: 14px;
@@ -938,6 +944,7 @@ span.logo__accent {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
 }
 
@@ -994,7 +1001,7 @@ span.logo__accent {
   display: block;
   margin-bottom: 20px;
   font-size: 24px;
-  line-height: 1.67;
+  line-height: 1.16;
 }
 @media screen and (min-width: 1200px) {
   .footer__logo {
@@ -1083,7 +1090,7 @@ span.logo__accent {
 }
 
 .input__container input {
-  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
@@ -1129,6 +1136,7 @@ span.logo__accent {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  height: 50px;
 }
 
 .input__img {
